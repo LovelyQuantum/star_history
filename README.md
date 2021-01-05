@@ -1,16 +1,12 @@
-> In celebration of 1k stars of this repo. The [star-history chrome extension](https://chrome.google.com/webstore/detail/iijibbcdddbhokfepbblglfgdglnccfn) is 67% off ($0.99) now.
-
 # Star History
 
-The missing star history graph of GitHub repos
+based on:https://github.com/timqian/star-history
 
-[![Join us](https://badgen.net/badge/Join%20the%20community%20of%20t9t.io/Get%20in%20touch/green)](https://t9t.io/#contact)
-
-## [As a website](https://star-history.t9t.io)
+## Website
 
 ![](https://raw.githubusercontent.com/timqian/images/master/star-history.gif)
 
-## [As an extension](https://chrome.google.com/webstore/detail/star-history/iijibbcdddbhokfepbblglfgdglnccfn)
+## Extension
 
 ![](https://raw.githubusercontent.com/timqian/images/master/star-history-extension.gif)
 
@@ -21,6 +17,16 @@ The missing star history graph of GitHub repos
 Star-history use GitHub API to retrieve repository metadata. When user exceed the rate [limit of unauthenticated requests](https://developer.github.com/v3/#rate-limiting). Star-history will need your personal access token to unlimit it.
 
 If you don't already have one, [create one](https://github.com/settings/tokens/new), and add to star-history (no scope to your personal data is needed)
+
+## Before your first run
+Make sure you have [nodejs](https://nodejs.org/en/) installed on your machine.
+Then run following commands:
+```bash
+npm install
+# If you are in china, try use cnpm to get fast experience
+# https://github.com/cnpm/cnpm
+cnpm insatll
+```
 
 ## Develop
 
@@ -38,6 +44,7 @@ npm run buildExtension
 ```
 
 ## Build and Deploy
+if you go there directly, install packages with above command first.
 
 ### Website
 
@@ -55,22 +62,4 @@ npm run buildExtension
 
 ## Updates
 
-- 2019-8-28: use [chart.xkcd](https://github.com/timqian/chart.xkcd) to plot the graph
-
-- 2019-3-06: Add personal access token; update style; mono repo
-
-- 2016-6-30: Alert to notie
-
-- 2016-6-28: Add clear btn
-
-- 2016-6-28: Better view for "many star" repos (use current star number as the last point on the graph)
-
-- 2016-6-26: **Store repo info into url hash**
-
-- 2016-6-26: **multiple kinds of input styles (eg: github.com/timqian/star-history, ...)**
-
-- 2016-6-26: Better view for less star repos #28
-
-- 2016-6-14: **Toggle search by hit enter** #26, prevent crash while searching for not existing repo
-
-- 2016-5-26: Update mobile view
+- 2021-1-5: update README.md and some HTML change.
