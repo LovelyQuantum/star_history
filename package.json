@@ -1,0 +1,33 @@
+{
+  "name": "star_history",
+  "version": "1.0.0",
+  "description": "The missing star history graph of github projects",
+  "main": "index.js",
+  "scripts": {
+    "startWebsite": "parcel website/index.html",
+    "buildWebsite": "rm -r dist && parcel build website/index.html --no-source-maps",
+    "deployWebsite": "npm run buildWebsite && up deploy production",
+    "startExtension": "parcel watch extension/src/index.js -d extension/build",
+    "buildExtension": "rm -r extension/build && parcel build extension/src/index.js -d extension/build --no-source-maps"
+  },
+  "keywords": [
+    "github",
+    "star",
+    "history"
+  ],
+  "browserslist": [
+    "since 2017-06"
+  ],
+  "author": "timqian",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "chart.xkcd": "^1.0.10",
+    "d3": "^3.5.17",
+    "notie": "^4.3.1",
+    "nvd3": "^1.8.6"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}
